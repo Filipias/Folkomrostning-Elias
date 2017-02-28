@@ -31,22 +31,22 @@
 			<area shape="rect" coords="111,635,279,677" href="index2.html" alt="Visa id">
 		</map>
 		<p id="textForm">Vill du ha det lite lättare? Fyll i formuläret nedan och starta folkomröstning</p>
-		<form method="POST" action="index.html">
+		<form method="POST" action="Skicka.php">
 			<div class="form-group">
 				<label for="name">Namn</label>
-				<input type="text" class="form-control" id="name" placeholder="Ditt namn">
+				<input type="text" class="form-control" name="name" placeholder="Ditt namn">
 			</div>
 			<div class="form-group">
 				<label for="ort">Ort</label>
-				<input type="text" class="form-control" id="Ort" placeholder="Din ort">
+				<input type="text" class="form-control" name="ort" placeholder="Din ort">
 			</div>
 			<div class="form-group">
 				<label for="mail">Mail</label>
-				<input type="email" class="form-control" id="mail" placeholder="Din email">
+				<input type="email" class="form-control" name="mail" placeholder="Din email">
 			</div>
 			<div class="form-group">
 				<label for="personnummer">Personnummer</label>
-				<input type="number" class="form-control" id="personnummer" placeholder="ÅÅMMDD-XXXX">
+				<input type="number" class="form-control" name="personnummer" placeholder="ÅÅMMDD-XXXX">
 			</div>
 			<div class="form-check">
 				<label class="form-check-label">
@@ -55,6 +55,7 @@
 				</label>
 			</div>
 			<button type="submit" class="btn btn-primary">Skicka</button>
+			<a href="resultat.php"><button type="button" class="btn btn-primary">Visa resultat</button></a>
 		</form>
 	</body>
 </html>
